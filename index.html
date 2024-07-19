@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nome da empresa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <h1>logo</h1>
+    </div>
+    <button id="butao_de_menu">menu</button>
+  </header>
+  <main>
+    <div class="conteudo">
+      <h1>conteudo</h1>
+    </div>
+    <div class="conteudo">
+      <h1>conteudo</h1>
+    </div>
+    <div class="conteudo">
+      <h1>conteudo</h1>
+    </div>
+
+    <div id="menu">
+      <ul>
+        <li>sobre1</li>
+        <li>sobre2</li>
+        <li>sobre3</li>
+      </ul>
+    </div>
+  </main>
+  <footer id="rodape">
+    <div class="logo">
+      <h1>logo</h1>
+    </div>
+    <div class="espaco"></div>
+    <ul>
+      <li>rede1</li>
+      <li>rede2</li>
+      <li>rede3</li>
+    </ul>
+  </footer>
+  <script>
+    document.getElementById("butao_de_menu").addEventListener('click', () =>{
+      let elementos = document.getElementsByClassName("conteudo");
+      if (elementos[0].style.display == "none") {
+        for (var i = 0; i < elementos.length; i++) {
+          elementos[i].style.display = "block";
+        }
+        document.getElementById("menu").style.display = "none";
+        document.getElementById("rodape").style.display = "block";
+        document.getElementById("butao_de_menu").innerText="menu"
+      }
+      else {
+        for (var i = 0; i < elementos.length; i++) {
+          elementos[i].style.display = "none";
+        }
+        document.getElementById("menu").style.display = "block";
+        document.getElementById("rodape").style.display = "none";
+        document.getElementById("butao_de_menu").innerText="fecha"
+      }
+    })
+  </script>
+</body>
+
+</html>
