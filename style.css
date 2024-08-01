@@ -1,0 +1,151 @@
+@font-face {
+
+    font-family: "logofonte";
+    src:url("GreatVibes-Regular.ttf");
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    gap: 10px;
+}
+header{
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    color: white;
+    display: flex;
+    position: fixed;
+    z-index: 999;
+}
+main{
+    z-index: 0;
+    margin-top: 200px;
+    width: 100%;
+    height: auto;
+}
+footer{
+    z-index: 0;
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    display: block;
+    color: white;
+}
+footer >ul{
+    display: flex;
+    list-style: none;
+}
+.espaco{
+    width: 100%;
+    height: 20px;
+    background-color: black;
+
+}
+
+.conteudo{
+    width: 100%;
+    height: 300px;
+    display:block;
+}
+#butao_de_menu{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    top: calc(100% - 100px);
+    left: calc(100% - 450px);
+    background-image: url(iconemenu.svg);
+    border: 0;
+    border-radius: 45px;
+}
+
+
+.logo{
+    width: 250px;
+    height: 100px;
+    background-image: url(Design\ sem\ nome.png);
+    position: relative;
+    top: 20px;
+    left: 50px;
+    color: black;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#menu{
+    position: fixed;
+    width: 100%;
+    height:100px;
+    background-color: white;
+    display: none;
+}
+#menu > ul{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    list-style: none;
+} 
+#menu > ul >li{
+    position: relative;
+    left:30%;
+}
+#imgiconelogo{
+    width: 150px;
+    height: 150px;
+    border-radius: 45px;
+    background-color: white;
+    position: relative;
+    left: 10px;
+    border: 1px solid black;
+}
+#conteudoesp1{
+    height: 500px;
+}
+#carrocel_de_img{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+footer > .logo{
+    border-radius: 10px;
+}
+#nomelogo{
+    font-size: 128px;
+    font-family: "logofonte";
+    color: #c7a04f;
+}
+@media (max-width: 500px) {
+    .logo{
+        width: 150px;
+        height: 50px;
+        background-image:url(LogoPraCelular.png) ;
+    }
+    #butao_de_menu{
+        top: 20%;
+        left: 40%;
+    }
+    main{
+        margin-top: 130px;
+    }
+    header{
+        height: 100px;
+    }
+    .conteudo{
+        height: 400px;
+    }
+    #nomelogo{
+        font-size: 64px;
+    }
+    
+}
